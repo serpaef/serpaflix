@@ -1,0 +1,32 @@
+.listCarrousel {
+  margin-bottom: 25px;
+}
+
+.listCarrousel h2 {
+  margin: 0 0 0 20px;
+}
+
+.listArea {
+  padding-left: 20px;
+  overflow-x: hidden;
+}
+
+.listRow {
+  width: max-content;
+}
+
+.movieCard {
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.movieCard img{
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+}
+
+.movieCard img:hover {
+  transform: scale(1);
+}
