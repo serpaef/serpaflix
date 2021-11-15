@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header'
 import getLists from '../api/tmdb'
+import Header from '../components/Header'
+import Lists from '../components/Lists';
 
 function Home() {
   const [list, setList] = useState([]);
@@ -17,8 +18,9 @@ function Home() {
   console.log(list);
 
   return (
-    <div className="main">
-      <Header />
+    <div className="home">
+      {/* <Header /> */}
+      <Lists Movies={list} />
       {/* <Featured />
       <Lists />
       <Footer /> */}
