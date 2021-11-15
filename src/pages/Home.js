@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../components/Header'
+import getLists from '../api/tmdb'
 
 function Home() {
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    const loadLists = async () => {
+      const results = await getLists();
+      setList([...results]);
+    }
+
+    loadLists();
+  }, [])
+
+  console.log(list);
+
   return (
-    <>
-    <Header />
-    <h1>Here the things begin</h1>
-    </>
+    <div className="main">
+      <Header />
+      {/* <Featured />
+      <Lists />
+      <Footer /> */}
+    </div>
   )
 }
 
