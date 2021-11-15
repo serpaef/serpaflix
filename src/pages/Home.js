@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import getLists from '../api/tmdb'
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import Lists from '../components/Lists';
 
 function Home() {

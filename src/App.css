@@ -1,38 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.logo {
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    color: yellow;
-    font-size: 2.5rem;
+* {
+    box-sizing: border-box;
 }
 
-.header {
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
-    position: fixed;
-    width: 100vw;
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('./images/BR-pt-20211020-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
-}
-
-.loginContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    background-color: rgba(0, 0, 0, .7);
-    padding: 4rem;
-}
-
-.loginContainer h1 {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 2.5rem;
+body {
+    background-color: #000;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
