@@ -10,14 +10,9 @@ async function fetchApi(endpoint) {
 export default async function getLists() {
   return [
     {
-      key: 'netflix',
-      title: 'Netflix',
+      key: 'streaming',
+      title: 'Streaming',
       items: await fetchApi('/discover/tv?with_network=213'),
-    },
-    {
-      key: 'amazonPrime',
-      title: 'Amazon Prime',
-      items: await fetchApi('/discover/tv?with_network=1024'),
     },
     {
       key: 'trending',
