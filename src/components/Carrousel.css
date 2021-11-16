@@ -11,9 +11,9 @@
   overflow-x: hidden;
 }
 
-/* .listRow {
+.listRow {
   transition: all ease 0.2s;
-} */
+}
 
 .movieCard {
   display: inline-block;
