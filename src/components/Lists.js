@@ -1,5 +1,7 @@
 import React from 'react';
 import './Lists.css';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 function Lists({ Movies }) {
   return (
@@ -7,6 +9,12 @@ function Lists({ Movies }) {
       { Movies && Movies.map(({ title, items: { results } }, index) => (
         <div className="listCarrousel" key={index}>
           <h2>{ title }</h2>
+          <div className="listLeft">
+            <ChevronLeftIcon style={{fontSize: 40}} />
+          </div>
+          <div className="listRight">
+            <ChevronRightIcon style={{fontSize: 40}} />
+          </div>
           <div className="listArea">
             <div className="listRow">
               { results.length && results.map((movie, index) => (

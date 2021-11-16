@@ -30,3 +30,34 @@
 .movieCard img:hover {
   transform: scale(1);
 }
+
+/* Ví a dica de dividir seletores css por virgula no canal WebDevSimplified*/
+.listLeft,
+.listRight {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 230px;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.listRight {
+  background: linear-gradient(to left, #000, transparent);
+  right: 0;
+}
+
+.listLeft {
+  background: linear-gradient(to right, #000, transparent);
+  left: 0;
+}
+
+.listCarrousel:hover .listRight,
+.listCarrousel:hover .listLeft {
+  opacity: 1;
+}
