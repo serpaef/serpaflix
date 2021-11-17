@@ -1,0 +1,63 @@
+.listCarrousel {
+  margin-bottom: 25px;
+}
+
+.listCarrousel h2 {
+  margin: 0 0 0 20px;
+}
+
+.listArea {
+  padding-left: 20px;
+  overflow-x: hidden;
+}
+
+.listRow {
+  transition: all ease 0.2s;
+}
+
+.movieCard {
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.movieCard img{
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+}
+
+.movieCard img:hover {
+  transform: scale(1);
+}
+
+/* Ví a dica de dividir seletores css por virgula no canal WebDevSimplified*/
+.listLeft,
+.listRight {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 230px;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.listRight {
+  background: linear-gradient(to left, #000, transparent);
+  right: 0;
+}
+
+.listLeft {
+  background: linear-gradient(to right, #000, transparent);
+  left: 0;
+}
+
+.listCarrousel:hover .listRight,
+.listCarrousel:hover .listLeft {
+  opacity: 1;
+}

@@ -1,14 +1,13 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import './Header.css'
 
-function Header() {
+function Header({Scrolled}) {
+  //TODO: transição mais suave do background
   return (
-    <Nav>
-      <Nav.Item className="header">
-        <Nav.Link href="/" className="logo">SERPAFLIX</Nav.Link>
-      </Nav.Item>
-    </Nav>
-  )
+    <header className={ Scrolled ? 'scrolled' : '' }>
+      <h1>SERPAFLIX</h1>
+    </header>
+  );
 }
 
 export default Header

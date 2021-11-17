@@ -1,0 +1,13 @@
+footer {
+  margin: 30px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: aqua;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
