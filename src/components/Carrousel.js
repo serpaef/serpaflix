@@ -6,7 +6,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 //Foi necessário componentizar cada carrossel para que cada um tivesse um estado exclusivo
 
 function Carrousel({Title, Results}) {
-  const [position, setPosition] = useState(-450);
+  const [position, setPosition] = useState(0);
 
   const handleLeft = () => {
     let pos = position + (window.innerWidth / 4);
