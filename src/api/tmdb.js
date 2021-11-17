@@ -7,6 +7,22 @@ async function fetchApi(endpoint) {
   return result;
 }
 
+export async function fetchFeaturedInfo(id, type) {
+  let info = {};
+  if (id) {
+    switch(type) {
+      case 'movie':
+        info = await fetchApi(`/movie/${id}?api_key=${API_KEY}`);
+        return info;
+      case 'tv':
+        info = await fetchApi(`/tv/${id}?api_key=${API_KEY}`);
+        return info;
+      default:
+        break;
+    }
+  }
+}
+
 export default async function getLists() {
   return [
     {
