@@ -49,9 +49,9 @@
   color: rgb(150,150,150);
   max-width: 40%;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; /* ... */
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 4; /* max-lines */
   -webkit-box-orient: vertical;
 }
 
