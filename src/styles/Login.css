@@ -1,0 +1,17 @@
+.main {
+  background: url('../images/BR-pt-20211020-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer {
+  position: fixed;
+  height: 70px;
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 25%, rgba(0,0,0,0));
+}

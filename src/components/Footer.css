@@ -3,11 +3,31 @@ footer {
   text-align: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: aqua;
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-footer a:hover {
-  text-decoration: underline;
+a {
+  text-decoration: none;
+}
+
+.linkButton {
+  display: flex;
+  margin: 0 7px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  transition: all ease 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #FFD51A;
+  color: #151218;;
 }
