@@ -25,6 +25,7 @@ a {
   color: white;
   background-color: transparent;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .linkButton:hover {

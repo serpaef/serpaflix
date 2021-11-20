@@ -64,8 +64,8 @@ function LoginContainer() {
         </button>
       </form>
       <div className="contacts">
-        <a href="https://github.com/serpaef/" className="contLink"><button className="linkButton" type="button"><GitHubIcon sx={{fontSize: 50}}/>/serpaef</button></a>
-        <a href="https://www.linkedin.com/in/serpaef/" className="contLink"><button className="linkButton" type="button"><LinkedInIcon sx={{fontSize: 50}}/>/serpaef</button></a>
+        <a href="https://github.com/serpaef/" target="_blank" className="contLink" rel="noreferrer"><button className="linkButton" type="button"><GitHubIcon sx={{fontSize: 50}}/>/serpaef</button></a>
+        <a href="https://www.linkedin.com/in/serpaef/" target="_blank" className="contLink" rel="noreferrer"><button className="linkButton" type="button"><LinkedInIcon sx={{fontSize: 50}}/>/serpaef</button></a>
       </div>
     </div>
   )
