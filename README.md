@@ -1,12 +1,14 @@
 # SERPAFLIX 
 
-A Netflix-like UI made for educational purposes
+A Netflix-like UI made for educational purposes.
+Data consumed from <a href="https://www.themoviedb.org/documentation/api">The Movie DataBase API</a>
 
 ### Tools used:
 
 - React
 - Bootstrap
 - MaterialUI
+- React Router
 
 ### In the project directory, you can run:
 
